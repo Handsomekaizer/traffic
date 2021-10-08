@@ -18,7 +18,7 @@ $loads = 1;
 if(hasParam('submit'))
 {
 
-$result = proxy($proxy, $viewer.urlEncode($url));
+$result = proxy($proxy, $viewer.urlDecode($url));
 
 echo ($loads+1).' Total <br>1 New View From '.$proxy.'<br>'.$url."<br>".$result.'<br>
 <script type="text/JavaScript">
